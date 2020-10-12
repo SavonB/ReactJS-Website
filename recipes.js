@@ -19,7 +19,13 @@ class Recipes extends Component {
             <div>
                 
                 <p> {this.props.recipe_title}</p>
-                <img src={this.props.img_url} />
+                
+                <img src={this.props.img_url} alt =" "/>
+            
+                <p>Rating: {this.props.recipe_rating}</p>
+                <div id ="m2">
+                <p>Description :{this.props.recipe_description}</p>
+                </div>
 
                 <label> Calories: {this.props.calories}</label>
                 <label> Good For {this.props.dietLabel} diets </label>

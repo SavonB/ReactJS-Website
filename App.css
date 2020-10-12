@@ -1,5 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Piazzolla:wght@200&display=swap');
+
 .App {
   text-align: center;
+  background-color: cornflowerblue;
 }
 
 .App-logo {
@@ -21,7 +25,7 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: cornflowerblue;
 }
 
 .App-link {
@@ -35,4 +39,16 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+h1{
+  font-family: 'Cinzel Decorative', cursive;
+}
+
+h2{
+  font-family: 'Piazzolla', serif;
+}
+
+.title-input{
+color: aqua;
 }

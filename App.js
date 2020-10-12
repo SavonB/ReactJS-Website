@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Recipes from './components/recipes'
 import recipesJSON from './data/recipes.json'
@@ -91,8 +90,11 @@ class App extends Component {
     }
 
     render() {
+        
         return (
             <div className="App">
+                <h1>Handy Dandy Recipes!</h1>
+                <h2>Easy, Delicious, Satisfying meals on demand</h2>
 
                 <input onChange={this._handleChange} type="text" />
                 <button onClick={this._handleClick}>search</button>
@@ -107,7 +109,7 @@ class App extends Component {
                 </select>
                 <button onClick={this._handleClickDiet}>search by dietLabel</button>
 
-                {this.state.curr_recipes.map(recipe => <Recipes recipe_title={recipe.title} img_url={recipe.image} dietLabel={recipe.dietLabel} calories={recipe.calories}/>)}
+                {this.state.curr_recipes.map(recipe => <Recipes recipe_title={recipe.title} recipe_description={recipe.description} img_url={recipe.image} recipe_rating={recipe.rating} dietLabel={recipe.dietLabel} calories={recipe.calories}/>)}
 
             </div>
         );
